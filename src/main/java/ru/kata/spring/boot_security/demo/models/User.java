@@ -109,7 +109,7 @@ public class User implements UserDetails {
         for (Role role : roles) {
             stringBuilder.append(delimiter);
             delimiter = ", ";
-            stringBuilder.append(role.getName());
+            stringBuilder.append(role.getName().substring(5));
         }
         return stringBuilder.toString();
     }
